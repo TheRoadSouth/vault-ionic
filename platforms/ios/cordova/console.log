@@ -1,0 +1,140 @@
+2015-02-22 22:42:59.485 vault-ionic[5617:287342] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Data/Application/C6A72807-E124-48F4-B36B-B569213660DC/Library/Cookies/Cookies.binarycookies
+2015-02-22 22:42:59.618 vault-ionic[5617:287342] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-22 22:42:59.618 vault-ionic[5617:287342] Multi-tasking -> Device: YES, App: YES
+2015-02-22 22:42:59.621 vault-ionic[5617:287342] Unlimited access to network resources
+2015-02-22 22:43:00.085 vault-ionic[5617:287342] [CDVTimer][keyboard] 0.070035ms
+2015-02-22 22:43:00.085 vault-ionic[5617:287342] [CDVTimer][TotalPluginStartup] 0.257015ms
+2015-02-22 22:43:01.144 vault-ionic[5617:287342] Resetting plugins due to page load.
+2015-02-22 22:43:01.403 vault-ionic[5617:287342] Finished load of: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Bundle/Application/4193BA16-A872-45E1-A866-983C2BED6ABD/vault-ionic.app/www/index.html#/tab/dash
+2015-02-22 22:44:02.858 vault-ionic[5767:288163] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Data/Application/2FDD3F29-9772-444F-BCB6-447DC78DBA68/Library/Cookies/Cookies.binarycookies
+2015-02-22 22:44:02.989 vault-ionic[5767:288163] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-22 22:44:02.990 vault-ionic[5767:288163] Multi-tasking -> Device: YES, App: YES
+2015-02-22 22:44:02.992 vault-ionic[5767:288163] Unlimited access to network resources
+2015-02-22 22:44:03.284 vault-ionic[5767:288163] [CDVTimer][keyboard] 0.064015ms
+2015-02-22 22:44:03.285 vault-ionic[5767:288163] [CDVTimer][TotalPluginStartup] 0.250995ms
+2015-02-22 22:44:03.344 vault-ionic[5767:288163] Resetting plugins due to page load.
+2015-02-22 22:44:03.507 vault-ionic[5767:288163] Finished load of: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Bundle/Application/CCF2FF53-654E-4CC7-A549-9D3F30256477/vault-ionic.app/www/index.html#/tab/dash
+2015-02-23 11:51:33.412 vault-ionic[3336:252745] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Data/Application/DC1E2079-93F2-450C-887F-3557B61F27B3/Library/Cookies/Cookies.binarycookies
+2015-02-23 11:51:33.675 vault-ionic[3336:252745] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-23 11:51:33.675 vault-ionic[3336:252745] Multi-tasking -> Device: YES, App: YES
+2015-02-23 11:51:33.689 vault-ionic[3336:252745] Unlimited access to network resources
+2015-02-23 11:51:34.116 vault-ionic[3336:252745] [CDVTimer][keyboard] 0.062048ms
+2015-02-23 11:51:34.117 vault-ionic[3336:252745] [CDVTimer][TotalPluginStartup] 0.259995ms
+2015-02-23 11:51:34.403 vault-ionic[3336:252745] Resetting plugins due to page load.
+2015-02-23 11:51:34.646 vault-ionic[3336:252745] Finished load of: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Bundle/Application/46D25649-F19C-48EB-8BE1-F00CBB1BC10A/vault-ionic.app/www/index.html#/tab/dash
+2015-02-23 13:02:17.735 vault-ionic[3778:393383] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Data/Application/C7AB0667-0F07-488F-9A2B-04A50A52E167/Library/Cookies/Cookies.binarycookies
+2015-02-23 13:02:17.865 vault-ionic[3778:393383] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-23 13:02:17.866 vault-ionic[3778:393383] Multi-tasking -> Device: YES, App: YES
+2015-02-23 13:02:17.867 vault-ionic[3778:393383] Unlimited access to network resources
+2015-02-23 13:02:18.174 vault-ionic[3778:393383] [CDVTimer][keyboard] 0.064969ms
+2015-02-23 13:02:18.174 vault-ionic[3778:393383] [CDVTimer][TotalPluginStartup] 0.252962ms
+2015-02-23 13:02:18.268 vault-ionic[3778:393383] Resetting plugins due to page load.
+2015-02-23 13:02:18.436 vault-ionic[3778:393383] Finished load of: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Bundle/Application/3428B1D5-C998-455B-9907-4F23838BCEC7/vault-ionic.app/www/index.html#/tab/dash
+2015-02-23 13:06:22.619 vault-ionic[3984:405389] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Data/Application/CF72C066-FF0A-4DAE-8218-31FB551677FD/Library/Cookies/Cookies.binarycookies
+2015-02-23 13:06:22.744 vault-ionic[3984:405389] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-23 13:06:22.745 vault-ionic[3984:405389] Multi-tasking -> Device: YES, App: YES
+2015-02-23 13:06:22.747 vault-ionic[3984:405389] Unlimited access to network resources
+2015-02-23 13:06:23.083 vault-ionic[3984:405389] [CDVTimer][keyboard] 0.065029ms
+2015-02-23 13:06:23.083 vault-ionic[3984:405389] [CDVTimer][TotalPluginStartup] 0.248015ms
+2015-02-23 13:06:23.159 vault-ionic[3984:405389] Resetting plugins due to page load.
+2015-02-23 13:06:23.340 vault-ionic[3984:405389] Finished load of: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Bundle/Application/A16259A2-41A2-46DA-AB41-41FB1684C00E/vault-ionic.app/www/index.html#/tab/dash
+2015-02-23 13:08:02.504 vault-ionic[4189:411004] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Data/Application/3326856E-AADD-4076-A7F6-139241F2E39B/Library/Cookies/Cookies.binarycookies
+2015-02-23 13:08:02.620 vault-ionic[4189:411004] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-23 13:08:02.620 vault-ionic[4189:411004] Multi-tasking -> Device: YES, App: YES
+2015-02-23 13:08:02.622 vault-ionic[4189:411004] Unlimited access to network resources
+2015-02-23 13:08:02.962 vault-ionic[4189:411004] [CDVTimer][keyboard] 0.064015ms
+2015-02-23 13:08:02.962 vault-ionic[4189:411004] [CDVTimer][TotalPluginStartup] 0.258029ms
+2015-02-23 13:08:03.032 vault-ionic[4189:411004] Resetting plugins due to page load.
+2015-02-23 13:08:03.229 vault-ionic[4189:411004] Finished load of: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Bundle/Application/8756CCB2-7FC7-4713-9B80-585E54FE7234/vault-ionic.app/www/index.html#/tab/dash
+2015-02-23 13:12:16.184 vault-ionic[4424:421732] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Data/Application/350566EE-9858-4024-A873-4B5B4E2D9CCA/Library/Cookies/Cookies.binarycookies
+2015-02-23 13:12:16.315 vault-ionic[4424:421732] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-23 13:12:16.316 vault-ionic[4424:421732] Multi-tasking -> Device: YES, App: YES
+2015-02-23 13:12:16.318 vault-ionic[4424:421732] Unlimited access to network resources
+2015-02-23 13:12:16.656 vault-ionic[4424:421732] [CDVTimer][keyboard] 0.064969ms
+2015-02-23 13:12:16.656 vault-ionic[4424:421732] [CDVTimer][TotalPluginStartup] 0.252008ms
+2015-02-23 13:12:16.725 vault-ionic[4424:421732] Resetting plugins due to page load.
+2015-02-23 13:12:16.903 vault-ionic[4424:421732] Finished load of: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Bundle/Application/7ACF0EA7-1AEF-452A-8B46-A64483070C67/vault-ionic.app/www/index.html#/tab/dash
+2015-02-23 13:25:34.011 vault-ionic[4694:451412] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Data/Application/C2248120-9ADD-493F-98B3-8B4F890D511E/Library/Cookies/Cookies.binarycookies
+2015-02-23 13:25:34.143 vault-ionic[4694:451412] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-23 13:25:34.143 vault-ionic[4694:451412] Multi-tasking -> Device: YES, App: YES
+2015-02-23 13:25:34.144 vault-ionic[4694:451412] Unlimited access to network resources
+2015-02-23 13:25:34.484 vault-ionic[4694:451412] [CDVTimer][keyboard] 0.060976ms
+2015-02-23 13:25:34.484 vault-ionic[4694:451412] [CDVTimer][TotalPluginStartup] 0.248969ms
+2015-02-23 13:25:34.561 vault-ionic[4694:451412] Resetting plugins due to page load.
+2015-02-23 13:25:34.738 vault-ionic[4694:451412] Finished load of: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Bundle/Application/AA978894-CD08-4B0A-8D7D-B2A52A89BDC8/vault-ionic.app/www/index.html#/tab/dash
+2015-02-23 13:39:15.347 vault-ionic[4927:463936] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Data/Application/A7311D1F-FE1C-4813-9709-E3F7FC45D980/Library/Cookies/Cookies.binarycookies
+2015-02-23 13:39:15.509 vault-ionic[4927:463936] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-23 13:39:15.510 vault-ionic[4927:463936] Multi-tasking -> Device: YES, App: YES
+2015-02-23 13:39:15.512 vault-ionic[4927:463936] Unlimited access to network resources
+2015-02-23 13:39:15.858 vault-ionic[4927:463936] [CDVTimer][keyboard] 0.068963ms
+2015-02-23 13:39:15.858 vault-ionic[4927:463936] [CDVTimer][TotalPluginStartup] 0.257969ms
+2015-02-23 13:39:15.940 vault-ionic[4927:463936] Resetting plugins due to page load.
+2015-02-23 13:39:16.130 vault-ionic[4927:463936] Finished load of: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Bundle/Application/8AFFEC3B-8620-4D22-8CBC-5838FE90911E/vault-ionic.app/www/index.html#/tab/dash
+2015-02-23 13:40:04.399 vault-ionic[5121:467415] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Data/Application/0EA76E04-3AE2-4BE8-8951-A98C9031890C/Library/Cookies/Cookies.binarycookies
+2015-02-23 13:40:04.526 vault-ionic[5121:467415] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-23 13:40:04.526 vault-ionic[5121:467415] Multi-tasking -> Device: YES, App: YES
+2015-02-23 13:40:04.528 vault-ionic[5121:467415] Unlimited access to network resources
+2015-02-23 13:40:04.878 vault-ionic[5121:467415] [CDVTimer][keyboard] 0.077963ms
+2015-02-23 13:40:04.878 vault-ionic[5121:467415] [CDVTimer][TotalPluginStartup] 0.270009ms
+2015-02-23 13:40:04.952 vault-ionic[5121:467415] Resetting plugins due to page load.
+2015-02-23 13:40:05.145 vault-ionic[5121:467415] Finished load of: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Bundle/Application/FF9AE6CF-8F07-4DE6-9425-055C3DF8A0A1/vault-ionic.app/www/index.html#/tab/dash
+2015-02-23 13:40:47.766 vault-ionic[5313:470749] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Data/Application/8D9A8BE7-ED6A-43F7-A31F-4DE962F39350/Library/Cookies/Cookies.binarycookies
+2015-02-23 13:40:47.891 vault-ionic[5313:470749] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-23 13:40:47.891 vault-ionic[5313:470749] Multi-tasking -> Device: YES, App: YES
+2015-02-23 13:40:47.893 vault-ionic[5313:470749] Unlimited access to network resources
+2015-02-23 13:40:48.229 vault-ionic[5313:470749] [CDVTimer][keyboard] 0.063002ms
+2015-02-23 13:40:48.229 vault-ionic[5313:470749] [CDVTimer][TotalPluginStartup] 0.252008ms
+2015-02-23 13:40:48.309 vault-ionic[5313:470749] Resetting plugins due to page load.
+2015-02-23 13:40:48.493 vault-ionic[5313:470749] Finished load of: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Bundle/Application/4D56A60B-D062-41EA-8B00-EF0ECD476DF0/vault-ionic.app/www/index.html#/tab/dash
+2015-02-23 13:42:12.036 vault-ionic[5509:475808] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Data/Application/B4992768-17EE-456C-9305-85674338B720/Library/Cookies/Cookies.binarycookies
+2015-02-23 13:42:12.170 vault-ionic[5509:475808] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-23 13:42:12.170 vault-ionic[5509:475808] Multi-tasking -> Device: YES, App: YES
+2015-02-23 13:42:12.172 vault-ionic[5509:475808] Unlimited access to network resources
+2015-02-23 13:42:12.513 vault-ionic[5509:475808] [CDVTimer][keyboard] 0.064969ms
+2015-02-23 13:42:12.513 vault-ionic[5509:475808] [CDVTimer][TotalPluginStartup] 0.253975ms
+2015-02-23 13:42:12.593 vault-ionic[5509:475808] Resetting plugins due to page load.
+2015-02-23 13:42:12.768 vault-ionic[5509:475808] Finished load of: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Bundle/Application/8A71F8C9-3890-4043-B7AC-2C3A565C89CD/vault-ionic.app/www/index.html#/tab/dash
+2015-02-23 13:43:53.685 vault-ionic[5706:480981] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Data/Application/D45ECA5C-1DE0-43C6-B30E-A962D906FA50/Library/Cookies/Cookies.binarycookies
+2015-02-23 13:43:53.825 vault-ionic[5706:480981] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-23 13:43:53.825 vault-ionic[5706:480981] Multi-tasking -> Device: YES, App: YES
+2015-02-23 13:43:53.827 vault-ionic[5706:480981] Unlimited access to network resources
+2015-02-23 13:43:54.184 vault-ionic[5706:480981] [CDVTimer][keyboard] 0.066996ms
+2015-02-23 13:43:54.184 vault-ionic[5706:480981] [CDVTimer][TotalPluginStartup] 0.250995ms
+2015-02-23 13:43:54.255 vault-ionic[5706:480981] Resetting plugins due to page load.
+2015-02-23 13:43:54.448 vault-ionic[5706:480981] Finished load of: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Bundle/Application/7E398B5C-DDB1-4DA2-B66F-20277A87C20B/vault-ionic.app/www/index.html#/tab/dash
+2015-02-23 13:45:21.021 vault-ionic[5902:486032] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Data/Application/EC34FF2F-B4B1-430D-AAA9-B7C46D89CCD5/Library/Cookies/Cookies.binarycookies
+2015-02-23 13:45:21.163 vault-ionic[5902:486032] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-23 13:45:21.164 vault-ionic[5902:486032] Multi-tasking -> Device: YES, App: YES
+2015-02-23 13:45:21.166 vault-ionic[5902:486032] Unlimited access to network resources
+2015-02-23 13:45:21.531 vault-ionic[5902:486032] [CDVTimer][keyboard] 0.065982ms
+2015-02-23 13:45:21.531 vault-ionic[5902:486032] [CDVTimer][TotalPluginStartup] 0.274003ms
+2015-02-23 13:45:21.606 vault-ionic[5902:486032] Resetting plugins due to page load.
+2015-02-23 13:45:21.776 vault-ionic[5902:486032] Finished load of: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Bundle/Application/96F7CF1D-B90F-4101-87BD-C70A6785443D/vault-ionic.app/www/index.html#/tab/dash
+2015-02-23 13:47:07.135 vault-ionic[6094:493037] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Data/Application/B3679468-BBD5-4624-B3FE-7555BCB97308/Library/Cookies/Cookies.binarycookies
+2015-02-23 13:47:07.285 vault-ionic[6094:493037] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-23 13:47:07.285 vault-ionic[6094:493037] Multi-tasking -> Device: YES, App: YES
+2015-02-23 13:47:07.287 vault-ionic[6094:493037] Unlimited access to network resources
+2015-02-23 13:47:07.603 vault-ionic[6094:493037] [CDVTimer][keyboard] 0.064969ms
+2015-02-23 13:47:07.603 vault-ionic[6094:493037] [CDVTimer][TotalPluginStartup] 0.260949ms
+2015-02-23 13:47:07.674 vault-ionic[6094:493037] Resetting plugins due to page load.
+2015-02-23 13:47:07.836 vault-ionic[6094:493037] Finished load of: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Bundle/Application/4E827E2D-6980-4C03-9764-87853C0C3267/vault-ionic.app/www/index.html#/tab/dash
+2015-02-23 13:54:59.545 vault-ionic[6094:493037] uploading video...
+2015-02-23 13:55:00.938 vault-ionic[6094:493037] uploading video...
+2015-02-23 13:55:02.997 vault-ionic[6094:493037] uploading video...
+2015-02-23 13:55:05.034 vault-ionic[6094:493037] uploading video...
+2015-02-23 13:55:24.830 vault-ionic[6094:493037] uploading video...
+2015-02-23 13:55:26.068 vault-ionic[6094:493037] uploading video...
+2015-02-23 13:56:13.341 vault-ionic[6465:527219] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Data/Application/3D0128E3-17C5-4A0F-9079-185D1C8C90FD/Library/Cookies/Cookies.binarycookies
+2015-02-23 13:56:13.488 vault-ionic[6465:527219] Apache Cordova native platform version 3.7.0 is starting.
+2015-02-23 13:56:13.489 vault-ionic[6465:527219] Multi-tasking -> Device: YES, App: YES
+2015-02-23 13:56:13.491 vault-ionic[6465:527219] Unlimited access to network resources
+2015-02-23 13:56:13.826 vault-ionic[6465:527219] [CDVTimer][keyboard] 0.061989ms
+2015-02-23 13:56:13.826 vault-ionic[6465:527219] [CDVTimer][TotalPluginStartup] 0.245035ms
+2015-02-23 13:56:13.905 vault-ionic[6465:527219] Resetting plugins due to page load.
+2015-02-23 13:56:14.083 vault-ionic[6465:527219] Finished load of: file:///Users/mprzybyla/Library/Developer/CoreSimulator/Devices/FCB3D969-3F31-4E3D-AE12-87384B0D9500/data/Containers/Bundle/Application/ADD57CE9-34F8-4950-AAE0-05F120F095E4/vault-ionic.app/www/index.html#/tab/dash
+2015-02-23 13:56:14.263 vault-ionic[6465:527219] up and running!!!!
+2015-02-23 13:56:32.186 vault-ionic[6465:527219] uploading video...
+2015-02-23 14:00:19.187 vault-ionic[6465:527219] uploading video...
+2015-02-23 14:00:21.235 vault-ionic[6465:527219] uploading video...
+2015-02-23 14:00:21.527 vault-ionic[6465:527219] uploading video...
+2015-02-23 14:00:21.854 vault-ionic[6465:527219] uploading video...
