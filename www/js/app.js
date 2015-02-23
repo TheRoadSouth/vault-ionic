@@ -51,7 +51,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/videoupload',
       views: {
         'tab-videos': {
-          templateUrl: 'templates/videoupload.html',
+          templateUrl: 'templates/video-upload.html',
           controller: 'VideoUploadCtrl'
         }
       }
