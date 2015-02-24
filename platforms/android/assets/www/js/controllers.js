@@ -3,18 +3,28 @@ angular.module('vault.controllers', [])
 .controller('DashCtrl', function($scope) {})
 
 
-.controller('VideoUploadCtrl', function($scope, Chats) {
+.controller('VideoUploadCtrl', function($scope, $cordovaCapture) {
   console.log("loading VideoUploadCtrl...");
 
   $scope.uploadVideo = function(video) {
     console.log("uploading video...");
+
+    var options = {
+      limit: 3,
+      duration: 15
+    };
+
+    $cordovaCapture.captureVideo(options).then(function(videoData) {
+      // Success! Video data is here
+    }, function(err) {
+      // An error occurred. Show a message to the user
+    });
   }
 })
 
 
 .controller('PhotoUploadCtrl', function($scope, $cordovaCamera) {
   console.log("loading PhotoUploadCtrl...");
-
 
   document.addEventListener("deviceready", function() {
 
