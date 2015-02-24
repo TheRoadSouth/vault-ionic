@@ -49,6 +49,15 @@ angular.module('starter', ['ionic', 'vault.controllers', 'vault.services'])
         }
       }
     })
+    .state('tab.photoupload', {
+      url: '/photoupload',
+      views: {
+        'photo-upload': {
+          templateUrl: 'templates/photo-upload.html',
+          controller: 'PhotoUploadCtrl'
+        }
+      }
+    })
     .state('tab.videoupload', {
       url: '/videoupload',
       views: {
