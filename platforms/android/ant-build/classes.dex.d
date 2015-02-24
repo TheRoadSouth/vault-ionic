@@ -10,5 +10,8 @@
 /Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/com/ionicframework/vaultionic974021/R$string.class \
 /Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/com/ionicframework/vaultionic974021/R$xml.class \
 /Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/com/ionicframework/vaultionic974021/R.class \
+/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/camera/CameraLauncher.class \
+/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/camera/ExifHelper.class \
+/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/camera/FileHelper.class \
 /Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
 /Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/dexedLibs/classes-70895954e2b5999a85590c1ac3a74941.jar \
