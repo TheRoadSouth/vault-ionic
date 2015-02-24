@@ -1,6 +1,8 @@
 angular.module('vault.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('DashCtrl', function($scope, Photos, Videos) {
+  console.log('Photos: ', Photos, 'Videos: ', Videos);
+})
 
 
 .controller('VideoUploadCtrl', function($scope, $cordovaCapture) {

@@ -1,6 +1,8 @@
 angular.module('vault.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('DashCtrl', function($scope, Chats) {
+  console.log(Chats.all());
+})
 
 
 .controller('VideoUploadCtrl', function($scope, $cordovaCapture) {
