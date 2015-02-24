@@ -71,7 +71,7 @@ angular.module('vault.services', [])
 
   return {
     all: function() {
-      return friends;
+      return photos;
     },
     get: function(photoId) {
       // Simple index lookup

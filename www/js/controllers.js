@@ -1,7 +1,11 @@
 angular.module('vault.controllers', [])
 
 .controller('DashCtrl', function($scope, Photos, Videos) {
+  // just testing some access to data
   console.log('Photos: ', Photos, 'Videos: ', Videos);
+
+  var photos = Photos.all();
+  console.log(photos[0].uri);
 })
 
 
