@@ -17,7 +17,6 @@ angular.module('vault.controllers', [])
   
   // just testing some access to data
   console.log('Photos: '+ Photos.all()+ ', Videos: '+ Videos);
-  console.log(Photos.all().length);
   $scope.photoList = Photos.all();
   $scope.videoList = Videos.all();
 
@@ -69,12 +68,24 @@ angular.module('vault.controllers', [])
 })
 
 
-.controller('PhotoUploadCtrl', function($scope, $cordovaCamera, Photos) {
+.controller('PhotoUploadCtrl', function($scope, $cordovaCamera, Photos, $ionicTabsDelegate) {
   console.log("loading PhotoUploadCtrl...");
 
   document.addEventListener("deviceready", function() {
-
-    $scope.uploadPhoto = function(photo) {
+    $scope.savePhoto = function(){
+        console.log("savePhoto, photoTitle:" + $scope.photoTitle);
+        Photos.push({
+            id: Photos.all().length,
+            uri: $scope.imagePath,
+            title: $scope.photoTitle,
+            description: $scope.photoDescription
+         });
+        // select display view
+        console.log($ionicTabsDelegate.selectedIndex());
+        $ionicTabsDelegate.select(0);
+    };
+    $scope.takePhoto = function() {
+         console.log("loading takePhoto...");
       var options = {
         destinationType: Camera.DestinationType.FILE_URI,
         sourceType: Camera.PictureSourceType.CAMERA,
@@ -86,19 +97,16 @@ angular.module('vault.controllers', [])
 
       $cordovaCamera.getPicture(options).then(function(imageData) {
         console.log("image data:" + imageData);
-        // var image = document.getElementById('myImage');
-        // image.src = "data:image/jpeg;base64," + imageData;
-        $scope.photomessage = imageData;
-        $scope.imagepath = imageData;
-        $scope.photofactoryuri = Photos.get(0).uri;
-        Photos.push({id: Photos.all().length, uri:imageData});
-        console.log(Photos.get(0).uri);
+
+        $scope.imagePath = imageData;        
         
 
       }, function(err) {
         console.log("something went wrong with the camera!" + err);
       });
     };
+
+    $scope.takePhoto();
 
   }, false);
 })

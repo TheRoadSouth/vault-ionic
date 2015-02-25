@@ -4,13 +4,15 @@
 
     <div class="list card" ng-repeat="obj in photoList">
       <div class="item item-avatar">
+        {{obj.title}}
+        {{obj.description}}
         {{obj.id}}
       </div>
       <div class="item item-image">
         <img src="{{obj.uri}}">
       </div>
     </div>
-    
+
     <div class="list card" ng-repeat="obj in videoList">
       <div class="item item-avatar">
         {{obj.id}}
