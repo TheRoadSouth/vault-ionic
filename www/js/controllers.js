@@ -45,48 +45,12 @@ angular.module('vault.controllers', [])
       };
 
       $cordovaCamera.getPicture(options).then(function(imageData) {
-        condole.log("image data:" + imageData);
+        console.log("image data:" + imageData);
         // var image = document.getElementById('myImage');
         // image.src = "data:image/jpeg;base64," + imageData;
-        
+        $scope.photomessage = imageData;
+        $scope.imagepath = imageData;
 
-
-function movePic(file){ 
-    console.log("movepic" + file);
-    window.resolveLocalFileSystemURI(file, resolveOnSuccess, resOnError); 
-} 
-
-//Callback function when the file system uri has been resolved
-function resolveOnSuccess(entry){ 
-    var d = new Date();
-    var n = d.getTime();
-    //new file name
-    var newFileName = n + ".jpg";
-    var myFolderApp = "DCIM/Camera";
-    console.log("resolveOnSuccess");
-
-    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSys) {      
-    //The folder is created if doesn't exist
-    fileSys.root.getDirectory( myFolderApp,
-                    {create:true, exclusive: false},
-                    function(directory) {
-                        entry.moveTo(directory, newFileName,  successMove, resOnError);
-                    },
-                    resOnError);
-                    },
-    resOnError);
-}
-
-//Callback function when the file has been moved successfully - inserting the complete path
-function successMove(entry) {
-    //I do my insert with "entry.fullPath" as for the path
-}
-
-function resOnError(error) {
-    condole.log(error);
-}
-
-movePic(imageData);
       }, function(err) {
         console.log("something went wrong with the camera!" + err);
       });
