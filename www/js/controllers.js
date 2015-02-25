@@ -27,10 +27,6 @@ angular.module('vault.controllers', [])
 .controller('VideoUploadCtrl', function($scope, $cordovaCapture, Videos) {
   console.log("loading VideoUploadCtrl...");
 
-  $scope.onTabSelected = function() {
-    console.log("fired when uploading...");
-  };
-
   $scope.uploadVideo = function() {
     console.log("uploading video...");
 
@@ -47,22 +43,15 @@ angular.module('vault.controllers', [])
           path = mediaFiles[i].fullPath;
           console.log('mediaFiles: ', mediaFiles[i], 'path: ', path);
 
-          Videos.add({id: null, thumbnail: null, uri: path});
-
-          var videos = Videos.all();
-          videos.forEach(function(video) {
-            console.log(video.uri);
-          })
+          Videos.add({id: Videos.all().length, thumbnail: null, uri: path});
       }
     };
 
     $cordovaCapture.captureVideo(options).then(function(videoData) {
-      // Success! Video data is here
       console.log("Successfully captured video ----> Firing callback!");
       captureSuccess(videoData);
     }, function(err) {
       console.log("Error capturing video");
-      // An error occurred. Show a message to the user
     });
 
   }
@@ -90,9 +79,9 @@ angular.module('vault.controllers', [])
         // image.src = "data:image/jpeg;base64," + imageData;
         $scope.photomessage = imageData;
         $scope.imagepath = imageData;
-        $scope.photofactoryuri = Photos.get(0).uri;
+        // $scope.photofactoryuri = Photos.get(0).uri;
         Photos.push({id: Photos.all().length, uri:imageData});
-        console.log(Photos.get(0).uri);
+        // console.log(Photos.get(0).uri);
         
 
       }, function(err) {
