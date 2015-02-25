@@ -1,2 +1,2 @@
-/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/AndroidManifest.xml : \
-/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/AndroidManifest.xml \
+/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/AndroidManifest.xml : \
+/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/AndroidManifest.xml \

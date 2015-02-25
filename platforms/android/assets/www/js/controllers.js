@@ -1,25 +1,29 @@
 angular.module('vault.controllers', [])
 
+.controller('MainCtrl', ['$state', '$scope', 'Videos', function($state, $scope, Videos) {
+  console.log('MainCtrl!!!');
+  $scope.videoOutput = [];
+
+  // fired on tab select
+  $scope.listVideos = function() {
+    console.log("listing videos...");
+    var videos = Videos.all();
+    videos.forEach(function(video) {
+      console.log(video.uri);
+      $scope.videoOutput.push(video.uri);
+    })
+  };
+}])
+
+
 .controller('DashCtrl', function($scope, Photos, Videos) {
   // just testing some access to data
   console.log('Photos: ', Photos, 'Videos: ', Videos);
-
-  $scope.listVideos = function() {
-    console.log("listing videos...");
-    // var videos = Videos.all();
-    // videos.forEach(function(video) {
-    //   console.log(video.uri);
-    // })
-  };
 })
 
 
 .controller('VideoUploadCtrl', function($scope, $cordovaCapture, Videos) {
   console.log("loading VideoUploadCtrl...");
-
-  $scope.onTabSelected = function() {
-    console.log("fired when uploading...");
-  };
 
   $scope.uploadVideo = function() {
     console.log("uploading video...");
@@ -47,12 +51,10 @@ angular.module('vault.controllers', [])
     };
 
     $cordovaCapture.captureVideo(options).then(function(videoData) {
-      // Success! Video data is here
       console.log("Successfully captured video ----> Firing callback!");
       captureSuccess(videoData);
     }, function(err) {
       console.log("Error capturing video");
-      // An error occurred. Show a message to the user
     });
 
   }
