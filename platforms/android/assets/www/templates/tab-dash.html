@@ -1,28 +1,26 @@
 <ion-view view-title="Vault">
   <ion-content class="padding">
-    <div class="list card">
-      <div class="item item-divider">Video 1</div>
-      <div class="item item-body">
-        <div>
-          Video Content
-        </div>
+
+
+    <div class="list card" ng-repeat="obj in photoList">
+      <div class="item item-avatar">
+        {{obj.id}}
+      </div>
+      <div class="item item-image">
+        <img src="{{obj.uri}}">
       </div>
     </div>
-    <div class="list card">
-      <div class="item item-divider">Photo 2</div>
-      <div class="item item-body">
-        <div>
-          Photo Content
-        </div>
+    
+    <div class="list card" ng-repeat="obj in videoList">
+      <div class="item item-avatar">
+        {{obj.id}}
+      </div>
+      <div class="item item-image">
+        <img src="{{obj.uri}}">
       </div>
     </div>
-    <div class="list card">
-      <div class="item item-divider">Video 3</div>
-      <div class="item item-body">
-        <div>
-          Video Content
-        </div>
-      </div>
-    </div>
+
+
+    
   </ion-content>
 </ion-view>

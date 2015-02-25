@@ -79,6 +79,10 @@ angular.module('vault.services', [])
     get: function(photoId) {
       // Simple index lookup
       return photos[photoId];
+    },
+    push: function(photo){
+      photos.push(photo);
+      return photos;
     }
   }
 });
