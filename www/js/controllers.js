@@ -3,20 +3,23 @@ angular.module('vault.controllers', [])
 .controller('MainCtrl', ['$state', '$scope', 'Videos', function($state, $scope, Videos) {
   console.log('MainCtrl!!!');
 
-  $scope.listVideos = function() {
-    console.log("listing videos...");
-    var videos = Videos.all();
-    videos.forEach(function(video) {
-      console.log(video.uri);
-    })
-  };
+  // $scope.listVideos = function() {
+  //   console.log("listing videos...");
+  //   var videos = Videos.all();
+  //   videos.forEach(function(video) {
+  //     console.log(video.uri);
+  //   })
+  // };
 }])
 
 
 .controller('DashCtrl', function($scope, Photos, Videos) {
   
   // just testing some access to data
-  console.log('Photos: ', Photos, 'Videos: ', Videos);
+  console.log('Photos: '+ Photos.all()+ ', Videos: '+ Videos);
+  console.log(Photos.all().length);
+  $scope.photoList = Photos.all();
+  $scope.videoList = Videos.all();
 
 })
 
@@ -88,10 +91,9 @@ angular.module('vault.controllers', [])
         $scope.photomessage = imageData;
         $scope.imagepath = imageData;
         $scope.photofactoryuri = Photos.get(0).uri;
-        var photolist = Photos.all;
-        photolist.push({id: photolist.length, uri:imageData});
+        Photos.push({id: Photos.all().length, uri:imageData});
         console.log(Photos.get(0).uri);
-        Photos.get(1)['uri'] = imageData;
+        
 
       }, function(err) {
         console.log("something went wrong with the camera!" + err);

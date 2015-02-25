@@ -4,27 +4,7 @@ angular.module('vault.services', [])
   // Might use a resource here that returns a JSON array
 
   // Some fake testing data
-  var videos = [{
-    id: 0,
-    uri: 'path/to/video',
-    thumb: 'path/to/thumb'
-  }, {
-    id: 1,
-    uri: 'path/to/video',
-    thumb: 'path/to/thumb'
-  }, {
-    id: 2,
-    uri: 'path/to/video',
-    thumb: 'path/to/thumb'
-  }, {
-    id: 3,
-    uri: 'path/to/video',
-    thumb: 'path/to/thumb'
-  }, {
-    id: 4,
-    uri: 'path/to/video',
-    thumb: 'path/to/thumb'
-  }];
+  var videos = [];
 
   return {
     all: function() {
@@ -54,22 +34,7 @@ angular.module('vault.services', [])
   // Might use a resource here that returns a JSON array
 
   // Some fake testing data
-  var photos = [{
-    id: 0,
-    uri: 'file:///storage/emulated/0/Pictures/1424826349114.jpg'
-  }, {
-    id: 1,
-    uri: 'path/to/photo'
-  }, {
-    id: 2,
-    uri: 'path/to/photo'
-  }, {
-    id: 3,
-    uri: 'path/to/photo'
-  }, {
-    id: 4,
-    uri: 'path/to/photo'
-  }];
+  var photos = [];
 
 
   return {
@@ -79,6 +44,10 @@ angular.module('vault.services', [])
     get: function(photoId) {
       // Simple index lookup
       return photos[photoId];
+    },
+    push: function(photo){
+      photos.push(photo);
+      return photos;
     }
   }
 });
