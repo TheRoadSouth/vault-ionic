@@ -7,20 +7,34 @@
         {{obj.description}}
       </div>
       <div class="item item-body">
+  <section id="cd-timeline" class="cd-container">
+
+    <div class="cd-timeline-block" ng-repeat="obj in photoList">
+      <div class="cd-timeline-img cd-picture">
+        <img src="lib/vertical-timeline/img/cd-icon-picture.svg" alt="Picture">
+      </div><!-- cd-timeline-img -->
+      <div class="cd-timeline-content">
+        <h2>{{obj.title}}</h2>
+        <p>{{obj.description}}</p>
         <img src="{{obj.uri}}" height="200" width="200">
-      </div>
-    </div>
+        <span class="cd-date">Jan 14</span>
+      </div><!-- cd-timeline-content -->
+    </div><!-- cd-timeline-block -->
 
-    <div class="list card" ng-repeat="obj in videoList">
-      <div class="item item-divider">
-        Video {{obj.id}}
-      </div>
-      <div class="item item-body">
+
+    <div class="cd-timeline-block" ng-repeat="obj in videoList">
+      <div class="cd-timeline-img cd-movie">
+        <img src="lib/vertical-timeline/img/cd-icon-movie.svg" alt="Movie">
+      </div> <!-- cd-timeline-img -->
+      <div class="cd-timeline-content">
+        <h2>Video {{obj.id}}</h2>
+        <p></p>
         <video controls src="{{obj.uri}}" height="200" width="200"></video>
-      </div>
-    </div>
+        <span class="cd-date">Feb 26</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
 
+  </section> <!-- cd-timeline -->
 
-    
   </ion-content>
 </ion-view>
