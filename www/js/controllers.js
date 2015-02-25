@@ -1,8 +1,7 @@
 angular.module('vault.controllers', [])
 
-.controller('DashCtrl', function($scope, Photos, Videos) {
-  // just testing some access to data
-  console.log('Photos: ', Photos, 'Videos: ', Videos);
+.controller('MainCtrl', ['$state', '$scope', 'Videos', function($state, $scope, Videos) {
+  console.log('MainCtrl!!!');
 
   $scope.listVideos = function() {
     console.log("listing videos...");
@@ -10,12 +9,24 @@ angular.module('vault.controllers', [])
     videos.forEach(function(video) {
       console.log(video.uri);
     })
-  }
+  };
+}])
+
+
+.controller('DashCtrl', function($scope, Photos, Videos) {
+  
+  // just testing some access to data
+  console.log('Photos: ', Photos, 'Videos: ', Videos);
+
 })
 
 
 .controller('VideoUploadCtrl', function($scope, $cordovaCapture, Videos) {
   console.log("loading VideoUploadCtrl...");
+
+  $scope.onTabSelected = function() {
+    console.log("fired when uploading...");
+  };
 
   $scope.uploadVideo = function() {
     console.log("uploading video...");

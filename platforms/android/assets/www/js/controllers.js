@@ -6,16 +6,20 @@ angular.module('vault.controllers', [])
 
   $scope.listVideos = function() {
     console.log("listing videos...");
-    var videos = Videos.all();
-    videos.forEach(function(video) {
-      console.log(video.uri);
-    })
-  }
+    // var videos = Videos.all();
+    // videos.forEach(function(video) {
+    //   console.log(video.uri);
+    // })
+  };
 })
 
 
 .controller('VideoUploadCtrl', function($scope, $cordovaCapture, Videos) {
   console.log("loading VideoUploadCtrl...");
+
+  $scope.onTabSelected = function() {
+    console.log("fired when uploading...");
+  };
 
   $scope.uploadVideo = function() {
     console.log("uploading video...");
