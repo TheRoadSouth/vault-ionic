@@ -26,10 +26,6 @@ angular.module('vault.controllers', [])
 .controller('VideoUploadCtrl', function($scope, $cordovaCapture, Videos) {
   console.log("loading VideoUploadCtrl...");
 
-  $scope.onTabSelected = function() {
-    console.log("fired when uploading...");
-  };
-
   $scope.uploadVideo = function() {
     console.log("uploading video...");
 
@@ -56,12 +52,10 @@ angular.module('vault.controllers', [])
     };
 
     $cordovaCapture.captureVideo(options).then(function(videoData) {
-      // Success! Video data is here
       console.log("Successfully captured video ----> Firing callback!");
       captureSuccess(videoData);
     }, function(err) {
       console.log("Error capturing video");
-      // An error occurred. Show a message to the user
     });
 
   }
