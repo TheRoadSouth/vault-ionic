@@ -1,7 +1,24 @@
 <ion-view view-title="Add Photo">
   <ion-content padding="true">
-        <button class="button button-block button-primary button-vault" ng-click="uploadPhoto(photo)">
+        <h2>{{photomessage}}</h2>
+        <button class="button button-block button-primary button-vault" ng-click="takePhoto()">
           Take Photo
         </button>
+        <img src="{{imagePath}}" width=200 height=200>
+        {{photoTitle}}
+        <div class="list">
+            <label id="title" class="item item-input item-floating-label">
+                <span class="input-label">Photo Title</span>
+                <input type="text" placeholder="Photo Title" ng-model="photoTitle">
+            </label>
+            <label id="title" class="item item-input item-floating-label">
+                <span class="input-label">Description</span>
+                <input type="text" placeholder="Description" ng-model="photoDescription">
+            </label>
+            <button class="button button-positive" ng-click="savePhoto()">
+                Save
+            </button>
+
+        </div>
   </ion-content>
 </ion-view>

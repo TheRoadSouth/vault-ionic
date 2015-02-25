@@ -1,25 +1,30 @@
 angular.module('vault.controllers', [])
 
-.controller('DashCtrl', function($scope, Photos, Videos) {
-  // just testing some access to data
-  console.log('Photos: ', Photos, 'Videos: ', Videos);
+.controller('MainCtrl', ['$state', '$scope', 'Videos', function($state, $scope, Videos) {
+  console.log('MainCtrl!!!');
 
-  $scope.listVideos = function() {
-    console.log("listing videos...");
-    // var videos = Videos.all();
-    // videos.forEach(function(video) {
-    //   console.log(video.uri);
-    // })
-  };
+  // $scope.listVideos = function() {
+  //   console.log("listing videos...");
+  //   var videos = Videos.all();
+  //   videos.forEach(function(video) {
+  //     console.log(video.uri);
+  //   })
+  // };
+}])
+
+
+.controller('DashCtrl', function($scope, Photos, Videos) {
+  
+  // just testing some access to data
+  console.log('Photos: '+ Photos.all()+ ', Videos: '+ Videos);
+  $scope.photoList = Photos.all();
+  $scope.videoList = Videos.all();
+
 })
 
 
 .controller('VideoUploadCtrl', function($scope, $cordovaCapture, Videos) {
   console.log("loading VideoUploadCtrl...");
-
-  $scope.onTabSelected = function() {
-    console.log("fired when uploading...");
-  };
 
   $scope.uploadVideo = function() {
     console.log("uploading video...");
@@ -47,43 +52,55 @@ angular.module('vault.controllers', [])
     };
 
     $cordovaCapture.captureVideo(options).then(function(videoData) {
-      // Success! Video data is here
       console.log("Successfully captured video ----> Firing callback!");
       captureSuccess(videoData);
     }, function(err) {
       console.log("Error capturing video");
-      // An error occurred. Show a message to the user
     });
 
   }
 })
 
 
-.controller('PhotoUploadCtrl', function($scope, $cordovaCamera) {
+.controller('PhotoUploadCtrl', function($scope, $cordovaCamera, Photos, $ionicTabsDelegate) {
   console.log("loading PhotoUploadCtrl...");
 
   document.addEventListener("deviceready", function() {
-
-    $scope.uploadPhoto = function(photo) {
+    $scope.savePhoto = function(){
+        console.log("savePhoto, photoTitle:" + $scope.photoTitle);
+        Photos.push({
+            id: Photos.all().length,
+            uri: $scope.imagePath,
+            title: $scope.photoTitle,
+            description: $scope.photoDescription
+         });
+        // select display view
+        console.log($ionicTabsDelegate.selectedIndex());
+        $ionicTabsDelegate.select(0);
+    };
+    $scope.takePhoto = function() {
+         console.log("loading takePhoto...");
       var options = {
-        quality: 50,
-        destinationType: Camera.DestinationType.DATA_URL,
+        destinationType: Camera.DestinationType.FILE_URI,
         sourceType: Camera.PictureSourceType.CAMERA,
-        allowEdit: true,
+        allowEdit: false,
         encodingType: Camera.EncodingType.JPEG,
-        targetWidth: 100,
-        targetHeight: 100,
         popoverOptions: CameraPopoverOptions,
-        saveToPhotoAlbum: false
+        saveToPhotoAlbum: true
       };
 
       $cordovaCamera.getPicture(options).then(function(imageData) {
-        var image = document.getElementById('myImage');
-        image.src = "data:image/jpeg;base64," + imageData;
+        console.log("image data:" + imageData);
+
+        $scope.imagePath = imageData;        
+        
+
       }, function(err) {
         console.log("something went wrong with the camera!" + err);
       });
     };
+
+    $scope.takePhoto();
 
   }, false);
 })
