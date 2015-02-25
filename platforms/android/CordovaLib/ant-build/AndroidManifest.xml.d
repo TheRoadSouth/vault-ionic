@@ -1,2 +1,2 @@
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/CordovaLib/ant-build/AndroidManifest.xml : \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/CordovaLib/AndroidManifest.xml \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/CordovaLib/ant-build/AndroidManifest.xml : \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/CordovaLib/AndroidManifest.xml \

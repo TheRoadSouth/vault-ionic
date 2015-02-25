@@ -1,64 +1,64 @@
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes.dex : \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard$1.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard$2.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard$3.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/com/ionicframework/vaultionic974021/BuildConfig.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/com/ionicframework/vaultionic974021/CordovaApp.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/com/ionicframework/vaultionic974021/R$attr.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/com/ionicframework/vaultionic974021/R$drawable.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/com/ionicframework/vaultionic974021/R$string.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/com/ionicframework/vaultionic974021/R$xml.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/com/ionicframework/vaultionic974021/R.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/camera/CameraLauncher.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/camera/ExifHelper.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/camera/FileHelper.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/ContentFilesystem.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/DirectoryManager.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/EncodingException.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileExistsException.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileHelper.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/Filesystem$1.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/Filesystem$LimitedInputStream.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/Filesystem$ReadFileCallback.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/Filesystem.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$1.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$10.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$11.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$12.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$13.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$14.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$15.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$16.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$17.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$18.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$19.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$2.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$20.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$21.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$22.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$23.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$24.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$25.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$26.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$3.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$4.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$5.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$6.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$7.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$8.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$9.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$FileOp.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/InvalidModificationException.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/LocalFilesystem.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/LocalFilesystemURL.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/NoModificationAllowedException.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/file/TypeMismatchException.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/mediacapture/Capture$1.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/mediacapture/Capture$2.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/mediacapture/Capture$3.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/mediacapture/Capture.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/classes/org/apache/cordova/mediacapture/FileHelper.class \
-/Applications/XAMPP/xamppfiles/htdocs/vault-ionic/platforms/android/ant-build/dexedLibs/classes-70895954e2b5999a85590c1ac3a74941.jar \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes.dex : \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard$1.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard$2.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard$3.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/com/ionicframework/vaultionic974021/BuildConfig.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/com/ionicframework/vaultionic974021/CordovaApp.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/com/ionicframework/vaultionic974021/R$attr.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/com/ionicframework/vaultionic974021/R$drawable.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/com/ionicframework/vaultionic974021/R$string.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/com/ionicframework/vaultionic974021/R$xml.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/com/ionicframework/vaultionic974021/R.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/camera/CameraLauncher.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/camera/ExifHelper.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/camera/FileHelper.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/ContentFilesystem.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/DirectoryManager.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/EncodingException.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileExistsException.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileHelper.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/Filesystem$1.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/Filesystem$LimitedInputStream.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/Filesystem$ReadFileCallback.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/Filesystem.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$1.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$10.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$11.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$12.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$13.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$14.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$15.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$16.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$17.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$18.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$19.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$2.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$20.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$21.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$22.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$23.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$24.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$25.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$26.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$3.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$4.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$5.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$6.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$7.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$8.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$9.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$FileOp.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/InvalidModificationException.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/LocalFilesystem.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/LocalFilesystemURL.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/NoModificationAllowedException.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/file/TypeMismatchException.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/mediacapture/Capture$1.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/mediacapture/Capture$2.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/mediacapture/Capture$3.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/mediacapture/Capture.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/classes/org/apache/cordova/mediacapture/FileHelper.class \
+/Users/yishida/Dropbox (Personal)/Active-work/pitch/hackday/martin-actual/platforms/android/ant-build/dexedLibs/classes-6870e5925fb4b179fd4e6becae344e16.jar \
