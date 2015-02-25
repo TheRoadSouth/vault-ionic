@@ -30,7 +30,7 @@ angular.module('vault.services', [])
     all: function() {
       return videos;
     },
-    remove: function(chat) {
+    remove: function(video) {
       videos.splice(videos.indexOf(video), 1);
     },
     get: function(videoId) {
@@ -40,6 +40,9 @@ angular.module('vault.services', [])
         }
       }
       return null;
+    },
+    add: function(video) {
+      videos.push(video);
     }
   }
 })
