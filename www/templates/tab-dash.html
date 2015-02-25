@@ -1,12 +1,10 @@
 <ion-view view-title="Vault">
   <ion-content class="padding">
 
-
     <div class="list card" ng-repeat="obj in photoList">
-      <div class="item item-avatar">
-        {{obj.title}}
+      <div class="item item-divider">
+        {{obj.title}}, 
         {{obj.description}}
-        {{obj.id}}
       </div>
       <div class="item item-body">
         <img src="{{obj.uri}}" height="200" width="200">

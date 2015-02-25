@@ -12,7 +12,7 @@ navigation history that also transitions its views in and out.
   </ion-tab>
 
     <!-- Add Photo Tab -->
-  <ion-tab title="Add Photo" icon-off="ion-image" icon-on="ion-image" href="#/tab/photoupload">
+  <ion-tab ng-controller="PhotoUploadCtrl" on-select="takePhoto();" title="Add Photo" icon-off="ion-image" icon-on="ion-image" href="#/tab/photoupload">
     <ion-nav-view name="photo-upload"></ion-nav-view>
   </ion-tab>
 

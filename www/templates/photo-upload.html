@@ -5,8 +5,8 @@
           Take Photo
         </button>
         <img src="{{imagePath}}" width=200 height=200>
-        {{photoTitle}}
-        <div class="list">
+        {{other}}
+        <div class="list" ng-controller="PhotoUploadCtrl">
             <label id="title" class="item item-input item-floating-label">
                 <span class="input-label">Photo Title</span>
                 <input type="text" placeholder="Photo Title" ng-model="photoTitle">

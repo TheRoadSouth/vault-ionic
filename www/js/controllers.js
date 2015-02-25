@@ -74,8 +74,10 @@ angular.module('vault.controllers', [])
             title: $scope.photoTitle,
             description: $scope.photoDescription
          });
+        for(photo in Photos.all()){
+          console.log(photo);
+        }
         // select display view
-        console.log($ionicTabsDelegate.selectedIndex());
         $ionicTabsDelegate.select(0);
     };
     $scope.takePhoto = function() {
@@ -100,7 +102,7 @@ angular.module('vault.controllers', [])
       });
     };
 
-    $scope.takePhoto();
+    
 
   }, false);
 })
