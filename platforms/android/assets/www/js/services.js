@@ -53,7 +53,7 @@ angular.module('vault.services', [])
   // Some fake testing data
   var photos = [{
     id: 0,
-    uri: 'path/to/photo'
+    uri: 'file:///storage/emulated/0/Pictures/1424826349114.jpg'
   }, {
     id: 1,
     uri: 'path/to/photo'

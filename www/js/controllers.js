@@ -29,7 +29,7 @@ angular.module('vault.controllers', [])
 })
 
 
-.controller('PhotoUploadCtrl', function($scope, $cordovaCamera) {
+.controller('PhotoUploadCtrl', function($scope, $cordovaCamera, Photos) {
   console.log("loading PhotoUploadCtrl...");
 
   document.addEventListener("deviceready", function() {
@@ -50,6 +50,11 @@ angular.module('vault.controllers', [])
         // image.src = "data:image/jpeg;base64," + imageData;
         $scope.photomessage = imageData;
         $scope.imagepath = imageData;
+        $scope.photofactoryuri = Photos.get(0).uri;
+        var photolist = Photos.all;
+        photolist.push({id: photolist.length, uri:imageData});
+        console.log(Photos.get(0).uri);
+        Photos.get(1)['uri'] = imageData;
 
       }, function(err) {
         console.log("something went wrong with the camera!" + err);
