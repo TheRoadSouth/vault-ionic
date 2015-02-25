@@ -4,3 +4,5 @@
 # node_modules/
 # platforms/
 # plugins/
+
+platforms/android/ant-build/

@@ -59,27 +59,33 @@ angular.module('vault.controllers', [])
 })
 
 
-.controller('PhotoUploadCtrl', function($scope, $cordovaCamera) {
+.controller('PhotoUploadCtrl', function($scope, $cordovaCamera, Photos) {
   console.log("loading PhotoUploadCtrl...");
 
   document.addEventListener("deviceready", function() {
 
     $scope.uploadPhoto = function(photo) {
       var options = {
-        quality: 50,
-        destinationType: Camera.DestinationType.DATA_URL,
+        destinationType: Camera.DestinationType.FILE_URI,
         sourceType: Camera.PictureSourceType.CAMERA,
-        allowEdit: true,
+        allowEdit: false,
         encodingType: Camera.EncodingType.JPEG,
-        targetWidth: 100,
-        targetHeight: 100,
         popoverOptions: CameraPopoverOptions,
-        saveToPhotoAlbum: false
+        saveToPhotoAlbum: true
       };
 
       $cordovaCamera.getPicture(options).then(function(imageData) {
-        var image = document.getElementById('myImage');
-        image.src = "data:image/jpeg;base64," + imageData;
+        console.log("image data:" + imageData);
+        // var image = document.getElementById('myImage');
+        // image.src = "data:image/jpeg;base64," + imageData;
+        $scope.photomessage = imageData;
+        $scope.imagepath = imageData;
+        $scope.photofactoryuri = Photos.get(0).uri;
+        var photolist = Photos.all;
+        photolist.push({id: photolist.length, uri:imageData});
+        console.log(Photos.get(0).uri);
+        Photos.get(1)['uri'] = imageData;
+
       }, function(err) {
         console.log("something went wrong with the camera!" + err);
       });
