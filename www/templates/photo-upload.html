@@ -2,16 +2,19 @@
 
   <ion-content padding="true">
     <h2>{{photomessage}}</h2>
-    <form class="list card" ng-controller="PhotoUploadCtrl" name="tagPhoto">
-       
+    
+    <div class="list card">    
 
         <div class="item item-image">
             <img src="{{imagePath}}" class="image">
         </div>
-        <a class="item" ng-click="takePhoto()">
+    </div>
+
+    <form class="" ng-controller="PhotoUploadCtrl" name="tagPhoto">
+        <a class="button button-block" ng-click="takePhoto()">
           Retake Photo
         </a>
-    </form>
+    
         <label class="item item-input item-floating-label">
             <span class="input-label">Photo Title</span>
             <input id="itemTitle" type="text" placeholder="Photo Title" ng-model="photoTitle">
@@ -25,6 +28,6 @@
         <button class="button button-positive button-block" ng-click="savePhoto()">
             Save
         </button>
-
+    </form>
   </ion-content>
 </ion-view>

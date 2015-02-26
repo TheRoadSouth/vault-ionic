@@ -24,6 +24,7 @@ angular.module('vault', ['ionic', 'ngCordova', 'vault.controllers', 'vault.servi
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
+//  $ionicConfigProvider.tabs.position('bottom'); //other values: top
 
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router

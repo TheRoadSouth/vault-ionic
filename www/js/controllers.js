@@ -95,9 +95,6 @@ angular.module('vault.controllers', [])
         $scope.photoDate = date;
         $scope.datePretty = date.toLocaleTimeString();
 
-
-        
-
       }, function(err) {
         console.log("something went wrong with the camera!" + err);
       });
