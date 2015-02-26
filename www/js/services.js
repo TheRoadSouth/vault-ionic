@@ -1,9 +1,30 @@
 angular.module('vault.services', [])
 
-.factory('Videos', function() {
-  // Might use a resource here that returns a JSON array
+.factory('Calls', function() {
+  var calls = [];
 
-  // Some fake testing data
+  return {
+    all: function() {
+      return calls;
+    },
+    remove: function(call) {
+      calls.splice(calls.indexOf(call), 1);
+    },
+    get: function(callId) {
+      for (var i = 0; i < calls.length; i++) {
+        if (calls[i].id === parseInt(callId)) {
+          return calls[i];
+        }
+      }
+      return null;
+    },
+    add: function(call) {
+      calls.push(call);
+    }
+  }
+})
+
+.factory('Videos', function() {
   var videos = [];
 
   return {
@@ -27,15 +48,8 @@ angular.module('vault.services', [])
   }
 })
 
-/**
- * A simple example service that returns some data.
- */
 .factory('Photos', function() {
-  // Might use a resource here that returns a JSON array
-
-  // Some fake testing data
   var photos = [];
-
 
   return {
     all: function() {

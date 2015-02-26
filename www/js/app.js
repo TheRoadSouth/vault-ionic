@@ -58,6 +58,15 @@ angular.module('vault', ['ionic', 'ngCordova', 'vault.controllers', 'vault.servi
         }
       }
     })
+    .state('tab.recordvoice', {
+      url: '/recordvoice',
+      views: {
+        'record-voice': {
+          templateUrl: 'templates/record-voice.html',
+          controller: 'VoiceUploadCtrl'
+        }
+      }
+    })
     .state('tab.videoupload', {
       url: '/videoupload',
       views: {

@@ -58,6 +58,69 @@ angular.module('vault.controllers', [])
 })
 
 
+// IMPORTANT: It's necessary to have an app installed that can handle the "recording intent"
+// e.g. http://stackoverflow.com/questions/21968455/cordova-media-capture-android-error-no-3-issue
+.controller('VoiceUploadCtrl', function($scope, $cordovaCapture, Calls, $ionicTabsDelegate) {
+  console.log("loading VoiceUploadCtrl...");
+
+  $scope.recordVoice = function() {
+    console.log("recording call...");
+
+    document.location.href = 'tel:+15104652278';
+
+  }
+
+  // $scope.recordVoice = function() {
+  //   console.log("recording call...");
+
+  //   document.location.href = 'tel:+15104652278';
+
+  //   var options = {
+  //     limit: 1,
+  //     duration: 2
+  //   };
+
+  //   var captureSuccess = function(mediaFiles) {
+  //     console.log('captureSuccess()...');
+  //     var i, path, len;
+  //     for (i = 0, len = mediaFiles.length; i < len; i += 1) {
+  //         $scope.path = mediaFiles[i].fullPath;
+  //     }
+  //   };
+
+  //   $scope.saveCall = function() {
+  //     console.log('saveCall()...');
+  //     Calls.add({
+  //       id: Calls.all().length,
+  //       uri: $scope.path
+  //     });
+
+  //     var calls = Calls.all();
+  //     calls.forEach(function(call) {
+  //       console.log('call.uri: ', call.uri);
+  //     });
+  //     // select display view
+  //     // $ionicTabsDelegate.select(0);
+  //   };
+
+  //   $cordovaCapture.captureAudio(options).then(function(audioData) {
+  //     console.log("Successfully captured call ----> Firing callback!");
+  //     captureSuccess(audioData);
+  //   }, function(err) {
+  //     console.log("Error capturing call" + err);
+  //   });
+
+  // }
+})
+
+
+
+
+
+
+
+
+
 .controller('PhotoUploadCtrl', function($scope, $cordovaCamera, Photos, $ionicTabsDelegate) {
   console.log("loading PhotoUploadCtrl...");
 
