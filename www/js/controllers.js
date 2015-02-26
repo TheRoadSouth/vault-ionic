@@ -70,45 +70,45 @@ angular.module('vault.controllers', [])
 
   }
 
-  // $scope.recordVoice = function() {
-  //   console.log("recording call...");
+  $scope.recordVoice = function() {
+    console.log("recording call...");
 
-  //   document.location.href = 'tel:+15104652278';
+    // document.location.href = 'tel:+15104652278';
 
-  //   var options = {
-  //     limit: 1,
-  //     duration: 2
-  //   };
+    var options = {
+      limit: 1,
+      duration: 2
+    };
 
-  //   var captureSuccess = function(mediaFiles) {
-  //     console.log('captureSuccess()...');
-  //     var i, path, len;
-  //     for (i = 0, len = mediaFiles.length; i < len; i += 1) {
-  //         $scope.path = mediaFiles[i].fullPath;
-  //     }
-  //   };
+    var captureSuccess = function(mediaFiles) {
+      console.log('captureSuccess()...');
+      var i, path, len;
+      for (i = 0, len = mediaFiles.length; i < len; i += 1) {
+          $scope.path = mediaFiles[i].fullPath;
+      }
+    };
 
-  //   $scope.saveCall = function() {
-  //     console.log('saveCall()...');
-  //     Calls.add({
-  //       id: Calls.all().length,
-  //       uri: $scope.path
-  //     });
+    $scope.saveCall = function() {
+      console.log('saveCall()...');
+      Calls.add({
+        id: Calls.all().length,
+        uri: $scope.path
+      });
 
-  //     var calls = Calls.all();
-  //     calls.forEach(function(call) {
-  //       console.log('call.uri: ', call.uri);
-  //     });
-  //     // select display view
-  //     // $ionicTabsDelegate.select(0);
-  //   };
+      var calls = Calls.all();
+      calls.forEach(function(call) {
+        console.log('call.uri: ', call.uri);
+      });
+      // select display view
+      // $ionicTabsDelegate.select(0);
+    };
 
-  //   $cordovaCapture.captureAudio(options).then(function(audioData) {
-  //     console.log("Successfully captured call ----> Firing callback!");
-  //     captureSuccess(audioData);
-  //   }, function(err) {
-  //     console.log("Error capturing call" + err);
-  //   });
+    $cordovaCapture.captureAudio(options).then(function(audioData) {
+      console.log("Successfully captured call ----> Firing callback!");
+      captureSuccess(audioData);
+    }, function(err) {
+      console.log("Error capturing call" + err);
+    });
 
   // }
 })
