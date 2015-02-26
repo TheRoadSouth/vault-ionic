@@ -5,7 +5,7 @@ angular.module('vault.controllers', [])
 }])
 
 .controller('DashCtrl', function($scope, Photos, Videos) {
-  console.log('Photos: '+ Photos.all()+ ', Videos: '+ Videos);
+  console.log('Photos: ' + Photos.all() + ', Videos: ' + Videos);
   $scope.photoList = Photos.all();
   $scope.videoList = Videos.all();
 })
@@ -25,7 +25,7 @@ angular.module('vault.controllers', [])
       console.log('captureSuccess()...');
       var i, path, len;
       for (i = 0, len = mediaFiles.length; i < len; i += 1) {
-          $scope.path = mediaFiles[i].fullPath;
+        $scope.path = mediaFiles[i].fullPath;
       }
     };
 
@@ -60,64 +60,82 @@ angular.module('vault.controllers', [])
 
 // IMPORTANT: It's necessary to have an app installed that can handle the "recording intent"
 // e.g. http://stackoverflow.com/questions/21968455/cordova-media-capture-android-error-no-3-issue
-.controller('VoiceUploadCtrl', function($scope, $cordovaCapture, Calls, $ionicTabsDelegate) {
+.controller('VoiceUploadCtrl', function($scope, Calls, $cordovaMedia, $ionicTabsDelegate) {
   console.log("loading VoiceUploadCtrl...");
+  var src = '';
 
   $scope.recordVoice = function() {
-    console.log("recording call...");
+    console.log("recording audio...");
 
-    document.location.href = 'tel:+15104652278';
+    // should probably call device ready here
+    recordAudio();
 
-  }
+    function recordAudio() {
+      src = "myrecording.amr";
+      var mediaRec = new Media(src, onSuccess, onError);
 
-  $scope.recordVoice = function() {
-    console.log("recording call...");
+      // Record audio
+      mediaRec.startRecord();
 
-    // document.location.href = 'tel:+15104652278';
+      // Stop recording after 10 sec
+      var recTime = 0;
+      var recInterval = setInterval(function() {
+        recTime = recTime + 1;
+        setAudioPosition(recTime + " sec");
+        if (recTime >= 10) {
+          clearInterval(recInterval);
+          mediaRec.stopRecord();
+          recording = mediaRec;
+        }
+      }, 1000);
+    }
 
-    var options = {
-      limit: 1,
-      duration: 2
-    };
+    function onSuccess() {
+      console.log("audio recorded!");
+    }
 
-    var captureSuccess = function(mediaFiles) {
-      console.log('captureSuccess()...');
-      var i, path, len;
-      for (i = 0, len = mediaFiles.length; i < len; i += 1) {
-          $scope.path = mediaFiles[i].fullPath;
-      }
-    };
+    // onError Callback
+    //
+    function onError(error) {
+      alert('code: ' + error.code + '\n' +
+        'message: ' + error.message + '\n');
+    }
 
-    $scope.saveCall = function() {
-      console.log('saveCall()...');
-      Calls.add({
-        id: Calls.all().length,
-        uri: $scope.path
-      });
+    // Set audio position
+    //
+    function setAudioPosition(position) {
+      document.getElementById('record-target').innerHTML = position;
+    }
 
-      var calls = Calls.all();
-      calls.forEach(function(call) {
-        console.log('call.uri: ', call.uri);
-      });
-      // select display view
-      // $ionicTabsDelegate.select(0);
-    };
+    // // media.play(options); // iOS only!
+    // media.play(); // Android
+    // media.pause();
+    // media.stop();
+    // media.release();
+    // media.seekTo(5000); // milliseconds value
+    // media.setVolume(0.5);
+    // media.startRecord();
+    // media.stopRecord();
+    // media.getDuration(media); not working yet
+    // media.getCurrentPosition().then(...); not working yet
+  };
 
-    $cordovaCapture.captureAudio(options).then(function(audioData) {
-      console.log("Successfully captured call ----> Firing callback!");
-      captureSuccess(audioData);
-    }, function(err) {
-      console.log("Error capturing call" + err);
-    });
+  $scope.playVoice = function() {
+    console.log("playing back audio...");
+    var mediaRec = new Media(src, onSuccess, onError);
+    // just play it right away
+    mediaRec.play();
 
-  // }
+    function onSuccess() {
+      console.log("audio played!");
+    }
+
+    function onError(err) {
+      console.log("something wen wrong with the playing!");
+    }
+  };
+
 })
-
-
-
-
-
-
 
 
 
@@ -125,22 +143,22 @@ angular.module('vault.controllers', [])
   console.log("loading PhotoUploadCtrl...");
 
   document.addEventListener("deviceready", function() {
-    $scope.savePhoto = function(){
-        console.log("savePhoto, photoTitle:" + $scope.photoTitle);
-        Photos.push({
-            id: Photos.all().length,
-            uri: $scope.imagePath,
-            title: $scope.photoTitle,
-            description: $scope.photoDescription
-         });
-        for(photo in Photos.all()){
-          console.log(photo);
-        }
-        // select display view
-        $ionicTabsDelegate.select(0);
+    $scope.savePhoto = function() {
+      console.log("savePhoto, photoTitle:" + $scope.photoTitle);
+      Photos.push({
+        id: Photos.all().length,
+        uri: $scope.imagePath,
+        title: $scope.photoTitle,
+        description: $scope.photoDescription
+      });
+      for (photo in Photos.all()) {
+        console.log(photo);
+      }
+      // select display view
+      $ionicTabsDelegate.select(0);
     };
     $scope.takePhoto = function() {
-         console.log("loading takePhoto...");
+      console.log("loading takePhoto...");
       var options = {
         destinationType: Camera.DestinationType.FILE_URI,
         sourceType: Camera.PictureSourceType.CAMERA,
@@ -153,15 +171,15 @@ angular.module('vault.controllers', [])
       $cordovaCamera.getPicture(options).then(function(imageData) {
         console.log("image data:" + imageData);
 
-        $scope.imagePath = imageData;        
-        
+        $scope.imagePath = imageData;
+
 
       }, function(err) {
         console.log("something went wrong with the camera!" + err);
       });
     };
 
-    
+
 
   }, false);
 })
