@@ -1,20 +1,20 @@
 angular.module('vault.controllers', [])
 
 .controller('MainCtrl', ['$state', '$scope', 'Videos', function($state, $scope, Videos) {
-  console.log('MainCtrl!!!');
+  // console.log('MainCtrl!!!');
 }])
 
 .controller('DashCtrl', function($scope, Photos, Videos) {
-  console.log('Photos: '+ Photos.all()+ ', Videos: '+ Videos);
+  // console.log('Photos: '+ Photos.all()+ ', Videos: '+ Videos);
   $scope.photoList = Photos.all();
   $scope.videoList = Videos.all();
 })
 
 .controller('VideoUploadCtrl', function($scope, $cordovaCapture, Videos, $ionicTabsDelegate) {
-  console.log("loading VideoUploadCtrl...");
+  // console.log("loading VideoUploadCtrl...");
 
   $scope.uploadVideo = function() {
-    console.log("uploading video...");
+    // console.log("uploading video...");
 
     var options = {
       limit: 1,
@@ -48,7 +48,7 @@ angular.module('vault.controllers', [])
     };
 
     $cordovaCapture.captureVideo(options).then(function(videoData) {
-      console.log("Successfully captured video ----> Firing callback!");
+      // console.log("Successfully captured video ----> Firing callback!");
       captureSuccess(videoData);
     }, function(err) {
       console.log("Error capturing video");
@@ -59,11 +59,11 @@ angular.module('vault.controllers', [])
 
 
 .controller('PhotoUploadCtrl', function($scope, $cordovaCamera, Photos, $ionicTabsDelegate) {
-  console.log("loading PhotoUploadCtrl...");
+  // console.log("loading PhotoUploadCtrl...");
 
   document.addEventListener("deviceready", function() {
     $scope.savePhoto = function(){
-        console.log("savePhoto, photoDate:" + $scope.photoDate);
+        // console.log("savePhoto, photoDate:" + $scope.photoDate);
         Photos.push({
             id: Photos.all().length,
             uri: $scope.imagePath,
@@ -77,7 +77,7 @@ angular.module('vault.controllers', [])
         $ionicTabsDelegate.select(0);
     };
     $scope.takePhoto = function() {
-      console.log("loading takePhoto...");
+      // console.log("loading takePhoto...");
       
 
       var options = {

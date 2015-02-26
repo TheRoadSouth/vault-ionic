@@ -1,6 +1,11 @@
 <ion-view view-title="Vault">
   <ion-content class="padding">
-    <button ng-click="photoOrderReverse=!photoOrderReverse;" class="button icon ion-ios-arrow-down">Sort</button>
+
+    <a ng-click="photoOrderReverse=!photoOrderReverse;" class="button button-stable button-clear icon-left ion-arrow-down">
+      <i class="icon ion-android-arrow-down"></i> Sort
+    </a>
+
+
 
     <div class="cd-timeline-block" ng-repeat="obj in photoList | orderBy:'id':photoOrderReverse">
       <div class="cd-timeline-img cd-picture">
