@@ -2,28 +2,15 @@ angular.module('vault.controllers', [])
 
 .controller('MainCtrl', ['$state', '$scope', 'Videos', function($state, $scope, Videos) {
   console.log('MainCtrl!!!');
-
-  // $scope.listVideos = function() {
-  //   console.log("listing videos...");
-  //   var videos = Videos.all();
-  //   videos.forEach(function(video) {
-  //     console.log(video.uri);
-  //   })
-  // };
 }])
 
-
 .controller('DashCtrl', function($scope, Photos, Videos) {
-  
-  // just testing some access to data
   console.log('Photos: '+ Photos.all()+ ', Videos: '+ Videos);
   $scope.photoList = Photos.all();
   $scope.videoList = Videos.all();
-
 })
 
-
-.controller('VideoUploadCtrl', function($scope, $cordovaCapture, Videos) {
+.controller('VideoUploadCtrl', function($scope, $cordovaCapture, Videos, $ionicTabsDelegate) {
   console.log("loading VideoUploadCtrl...");
 
   $scope.uploadVideo = function() {
@@ -36,19 +23,28 @@ angular.module('vault.controllers', [])
 
     var captureSuccess = function(mediaFiles) {
       console.log('captureSuccess()...');
-
       var i, path, len;
       for (i = 0, len = mediaFiles.length; i < len; i += 1) {
-          path = mediaFiles[i].fullPath;
-          console.log('mediaFiles: ', mediaFiles[i], 'path: ', path);
-
-          Videos.add({id: null, thumbnail: null, uri: path});
-
-          var videos = Videos.all();
-          videos.forEach(function(video) {
-            console.log(video.uri);
-          })
+          $scope.path = mediaFiles[i].fullPath;
       }
+    };
+
+    $scope.saveVideo = function() {
+      console.log('saveVideo()...');
+      Videos.add({
+        id: Videos.all().length,
+        thumbnail: null,
+        uri: $scope.path,
+        title: $scope.videoTitle,
+        description: $scope.videoDescription
+      });
+
+      var videos = Videos.all();
+      videos.forEach(function(video) {
+        console.log('video.uri: ', video.uri);
+      });
+      // select display view
+      $ionicTabsDelegate.select(0);
     };
 
     $cordovaCapture.captureVideo(options).then(function(videoData) {

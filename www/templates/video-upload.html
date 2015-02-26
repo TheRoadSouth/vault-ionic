@@ -3,5 +3,19 @@
         <button class="button button-block button-primary button-vault" ng-click="uploadVideo()">
           Record
         </button>
+
+        <div class="list" ng-controller="VideoUploadCtrl">
+            <label id="title" class="item item-input item-floating-label">
+                <span class="input-label">Video Title</span>
+                <input type="text" placeholder="Video Title" ng-model="videoTitle">
+            </label>
+            <label id="title" class="item item-input item-floating-label">
+                <span class="input-label">Description</span>
+                <input type="text" placeholder="Description" ng-model="videoDescription">
+            </label>
+            <button class="button button-positive" ng-click="saveVideo()">
+                Save
+            </button>
+        </div>
   </ion-content>
 </ion-view>
