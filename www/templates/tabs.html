@@ -3,24 +3,25 @@ Create tabs with an icon and label, using the tabs-positive style.
 Each tab's child <ion-nav-view> directive will have its own
 navigation history that also transitions its views in and out.
 -->
-<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+
+  <ion-tabs class="tabs-icon-top tabs-color-active-positive">
 
 
-  <!-- Dashboard Tab -->
-  <ion-tab title="My Vault" icon-off="ion-filing" icon-on="ion-filing" href="#/tab/dash">
-    <ion-nav-view name="tab-dash"></ion-nav-view>
-  </ion-tab>
+    <!-- Dashboard Tab -->
+    <ion-tab title="My Vault" icon-off="ion-filing" icon-on="ion-filing" href="#/tab/dash">
+      <ion-nav-view name="tab-dash"></ion-nav-view>
+    </ion-tab>
 
-    <!-- Add Photo Tab -->
-  <ion-tab ng-controller="PhotoUploadCtrl" on-select="takePhoto();" title="Add Photo" icon-off="ion-image" icon-on="ion-image" href="#/tab/photoupload">
-    <ion-nav-view name="photo-upload"></ion-nav-view>
-  </ion-tab>
-
-
-  <!-- Add Video Tab -->
-  <ion-tab title="Add Video" icon-off="ion-videocamera" icon-on="ion-videocamera" href="#/tab/videoupload">
-    <ion-nav-view name="video-upload"></ion-nav-view>
-  </ion-tab>
+      <!-- Add Photo Tab -->
+    <ion-tab ng-controller="PhotoUploadCtrl" on-select="takePhoto();" title="Add Photo" icon-off="ion-image" icon-on="ion-image" href="#/tab/photoupload">
+      <ion-nav-view name="photo-upload"></ion-nav-view>
+    </ion-tab>
 
 
-</ion-tabs>
+    <!-- Add Video Tab -->
+    <ion-tab title="Add Video" icon-off="ion-videocamera" icon-on="ion-videocamera" href="#/tab/videoupload">
+      <ion-nav-view name="video-upload"></ion-nav-view>
+    </ion-tab>
+
+
+  </ion-tabs>

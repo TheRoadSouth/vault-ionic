@@ -1,24 +1,30 @@
 <ion-view view-title="Add Photo">
-  <ion-content padding="true">
-        <h2>{{photomessage}}</h2>
-        <button class="button button-block button-primary button-vault" ng-click="takePhoto()">
-          Take Photo
-        </button>
-        <img src="{{imagePath}}" width=200 height=200>
-        {{other}}
-        <div class="list" ng-controller="PhotoUploadCtrl">
-            <label id="title" class="item item-input item-floating-label">
-                <span class="input-label">Photo Title</span>
-                <input type="text" placeholder="Photo Title" ng-model="photoTitle">
-            </label>
-            <label id="title" class="item item-input item-floating-label">
-                <span class="input-label">Description</span>
-                <input type="text" placeholder="Description" ng-model="photoDescription">
-            </label>
-            <button class="button button-positive" ng-click="savePhoto()">
-                Save
-            </button>
 
+  <ion-content padding="true">
+    <h2>{{photomessage}}</h2>
+    <form class="list card" ng-controller="PhotoUploadCtrl" name="tagPhoto">
+       
+
+        <div class="item item-image">
+            <img src="{{imagePath}}" class="image">
         </div>
+        <a class="item" ng-click="takePhoto()">
+          Retake Photo
+        </a>
+    </form>
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Photo Title</span>
+            <input id="itemTitle" type="text" placeholder="Photo Title" ng-model="photoTitle">
+        </label>
+
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Description</span>
+            <input id="itemDescription" type="text" placeholder="Description" ng-model="photoDescription">
+        </label>
+
+        <button class="button button-positive button-block" ng-click="savePhoto()">
+            Save
+        </button>
+
   </ion-content>
 </ion-view>

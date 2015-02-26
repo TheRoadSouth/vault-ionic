@@ -79,8 +79,8 @@ angular.module('vault.controllers', [])
     $scope.takePhoto = function() {
          console.log("loading takePhoto...");
      // clear inputs
-        $scope.photoTitle = "";
-        $scope.photoDescription = "";
+
+
 
       var options = {
         destinationType: Camera.DestinationType.FILE_URI,
