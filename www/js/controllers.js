@@ -67,21 +67,25 @@ angular.module('vault.controllers', [])
 
   document.addEventListener("deviceready", function() {
     $scope.savePhoto = function(){
-        console.log("savePhoto, photoTitle:" + $scope.photoTitle);
+        console.log("savePhoto, photoDate:" + $scope.photoDate);
         Photos.push({
             id: Photos.all().length,
             uri: $scope.imagePath,
             title: $scope.photoTitle,
-            description: $scope.photoDescription
+            description: $scope.photoDescription,
+            date: $scope.photoDate,
+            datePretty: $scope.datePretty
          });
-        for(photo in Photos.all()){
-          console.log(photo);
-        }
+
         // select display view
         $ionicTabsDelegate.select(0);
     };
     $scope.takePhoto = function() {
          console.log("loading takePhoto...");
+     // clear inputs
+        $scope.photoTitle = "";
+        $scope.photoDescription = "";
+
       var options = {
         destinationType: Camera.DestinationType.FILE_URI,
         sourceType: Camera.PictureSourceType.CAMERA,
@@ -92,10 +96,15 @@ angular.module('vault.controllers', [])
       };
 
       $cordovaCamera.getPicture(options).then(function(imageData) {
-        console.log("image data:" + imageData);
+        $scope.imagePath = imageData;
+        var date = new Date();
+        $scope.photoDate = date;
+        $scope.datePretty = date.toLocaleTimeString();
 
-        $scope.imagePath = imageData;        
-        
+
+        // clear inputs
+        $scope.photoTitle = "";
+        $scope.photoDescription = "";
 
       }, function(err) {
         console.log("something went wrong with the camera!" + err);
