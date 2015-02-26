@@ -1,7 +1,7 @@
 <ion-view view-title="Vault">
   <ion-content class="padding">
-    {{photoOrderReverse}}
     <button ng-click="photoOrderReverse=!photoOrderReverse;" class="button icon ion-ios-arrow-down">Sort</button>
+
     <div class="cd-timeline-block" ng-repeat="obj in photoList | orderBy:'id':photoOrderReverse">
       <div class="cd-timeline-img cd-picture">
         <img src="lib/vertical-timeline/img/cd-icon-picture.svg" alt="Picture">
@@ -9,7 +9,7 @@
       <div class="cd-timeline-content">
         <h2>{{obj.title}}</h2>
         <p>{{obj.description}}</p>
-        <img src="{{obj.uri}}" height="200" width="200">
+        <img src="{{obj.uri}}" class="image">
         <span class="cd-date">{{obj.datePretty}}</span>
       </div><!-- cd-timeline-content -->
     </div><!-- cd-timeline-block -->
@@ -22,7 +22,7 @@
       <div class="cd-timeline-content">
         <h2>{{obj.title}}</h2>
         <p>{{obj.description}}</p>
-        <video controls src="{{obj.uri}}" height="200" width="200"></video>
+        <video controls src="{{obj.uri}}" class="image"></video>
         <span class="cd-date">Feb 26</span>
       </div> <!-- cd-timeline-content -->
     </div> <!-- cd-timeline-block -->

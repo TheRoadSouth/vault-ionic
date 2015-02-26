@@ -77,10 +77,8 @@ angular.module('vault.controllers', [])
         $ionicTabsDelegate.select(0);
     };
     $scope.takePhoto = function() {
-         console.log("loading takePhoto...");
-     // clear inputs
-
-
+      console.log("loading takePhoto...");
+      
 
       var options = {
         destinationType: Camera.DestinationType.FILE_URI,
@@ -98,9 +96,7 @@ angular.module('vault.controllers', [])
         $scope.datePretty = date.toLocaleTimeString();
 
 
-        // clear inputs
-        $scope.photoTitle = "";
-        $scope.photoDescription = "";
+        
 
       }, function(err) {
         console.log("something went wrong with the camera!" + err);
