@@ -4,10 +4,11 @@ angular.module('vault.controllers', [])
   // console.log('MainCtrl!!!');
 }])
 
-.controller('DashCtrl', function($scope, Photos, Videos) {
+.controller('DashCtrl', function($scope, Photos, Videos, FileIO) {
   // console.log('Photos: '+ Photos.all()+ ', Videos: '+ Videos);
   $scope.photoList = Photos.all();
   $scope.videoList = Videos.all();
+  $scope.logfile = FileIO.read(cordova.file.dataDirectory);
 })
 
 .controller('VideoUploadCtrl', function($scope, $cordovaCapture, Videos, $ionicTabsDelegate) {
@@ -58,7 +59,7 @@ angular.module('vault.controllers', [])
 })
 
 
-.controller('PhotoUploadCtrl', function($scope, $cordovaCamera, Photos, $ionicTabsDelegate) {
+.controller('PhotoUploadCtrl', function($scope, $cordovaCamera, Photos, $ionicTabsDelegate, FileIO) {
   // console.log("loading PhotoUploadCtrl...");
 
   document.addEventListener("deviceready", function() {
@@ -71,10 +72,56 @@ angular.module('vault.controllers', [])
             description: $scope.photoDescription,
             date: $scope.photoDate,
             datePretty: $scope.datePretty
-         });
+        });
+
+        // save new factories
+        console.log(cordova.file.dataDirectory);
+        FileIO.write(cordova.file.dataDirectory, "haoiwfhjoaiwh");
+        FileIO.read(cordova.file.dataDirectory);
+
+        // function writeLog(str) {
+        //   if(!logOb) return;
+        //   var log = str + " [" + (new Date()) + "]\n";
+        //   console.log("going to log "+log);
+        //   logOb.createWriter(function(fileWriter) {
+            
+        //     fileWriter.seek(fileWriter.length);
+            
+        //     var blob = new Blob([log], {type:'text/plain'});
+        //     fileWriter.write(blob);
+        //     console.log("ok, in theory i worked");
+
+        //     justForTesting();
+        //   }, function(err){
+        //     console.log("error in createWriter");
+        //   });
+        // }
+        // var logOb; // log object
+        // window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function(dir) {
+        //   console.log("got main dir",dir);
+        //   dir.getFile("log.txt", {create:true}, function(file) {
+        //     console.log("got the file", file);
+        //     logOb = file;
+        //     writeLog("App started");      
+        //   });
+        // });
+        // function justForTesting() {
+        //   logOb.file(function(file) {
+        //     var reader = new FileReader();
+
+        //     reader.onloadend = function(e) {
+        //       console.log(this.result);
+        //     };
+
+        //     reader.readAsText(file);
+        //   }, function(){console.log("read in failed"); });
+
+        // }
+
 
         // select display view
         $ionicTabsDelegate.select(0);
+
     };
     $scope.takePhoto = function() {
       // console.log("loading takePhoto...");
@@ -88,6 +135,7 @@ angular.module('vault.controllers', [])
         popoverOptions: CameraPopoverOptions,
         saveToPhotoAlbum: true
       };
+      
 
       $cordovaCamera.getPicture(options).then(function(imageData) {
         $scope.imagePath = imageData;

@@ -16,6 +16,7 @@
   },
   "cordovaPlugins": [
     "org.apache.cordova.camera",
-    "org.apache.cordova.media-capture"
+    "org.apache.cordova.media-capture",
+    "org.apache.cordova.file"
   ]
 }
