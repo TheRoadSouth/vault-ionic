@@ -7,31 +7,46 @@
 
 
 
-    <div class="cd-timeline-block" ng-repeat="obj in photoList | orderBy:'id':photoOrderReverse">
-      <div class="cd-timeline-img cd-picture">
-        <img src="lib/vertical-timeline/img/cd-icon-picture.svg" alt="Picture">
-      </div><!-- cd-timeline-img -->
-      <div class="cd-timeline-content">
-        <h2>{{obj.title}}</h2>
-        <p>{{obj.description}}</p>
-        <img src="{{obj.uri}}" class="image">
-        <span class="cd-date">{{obj.datePretty}}</span>
-      </div><!-- cd-timeline-content -->
+    <div class="cd-timeline-block" ng-repeat="obj in mediaList | orderBy:'date':photoOrderReverse">
+    
+
+      <div ng-if="obj.mediaType == 'picture'" class="">
+        
+        <div class="cd-timeline-img cd-picture">
+          <img src="lib/vertical-timeline/img/cd-icon-picture.svg" alt="Picture">
+        </div>
+
+        <div class="cd-timeline-content">
+          <h2>{{obj.title}}</h2>
+          <p>{{obj.description}}</p>
+          <img src="{{obj.uri}}" class="image">
+          <span class="cd-date">{{obj.datePretty}}</span>
+        </div><!-- cd-timeline-content -->
+      
+      </div>
+
+
+      <div ng-if="obj.mediaType == 'movie'" class="">
+        
+        <div class="cd-timeline-img cd-movie">
+          <img src="lib/vertical-timeline/img/cd-icon-movie.svg" alt="Picture">
+        </div>
+
+        <div class="cd-timeline-content">
+          <h2>{{obj.title}}</h2>
+          <p>{{obj.description}}</p>
+          <video controls src="{{obj.uri}}" class="image" height=200></video>
+          <span class="cd-date">{{obj.datePretty}}</span>
+        </div><!-- cd-timeline-content -->
+
+      </div>
+
+
+      
     </div><!-- cd-timeline-block -->
 
 
-    <div class="cd-timeline-block" ng-repeat="obj in videoList">
-      <div class="cd-timeline-img cd-movie">
-        <img src="lib/vertical-timeline/img/cd-icon-movie.svg" alt="Movie">
-      </div> <!-- cd-timeline-img -->
-      <div class="cd-timeline-content">
-        <h2>{{obj.title}}</h2>
-        <p>{{obj.description}}</p>
-        <video controls src="{{obj.uri}}" class="image"></video>
-        <span class="cd-date">Feb 26</span>
-      </div> <!-- cd-timeline-content -->
-    </div> <!-- cd-timeline-block -->
-
+    
   </section> <!-- cd-timeline -->
 
   </ion-content>

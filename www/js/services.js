@@ -1,53 +1,33 @@
 angular.module('vault.services', [])
 
-.factory('Videos', function() {
+/**
+ * A simple example service that returns some data.
+ */
+.factory('Media', function() {
   // Might use a resource here that returns a JSON array
 
   // Some fake testing data
-  var videos = [];
+  var media = [];
+
 
   return {
     all: function() {
-      return videos;
+      return media;
     },
-    remove: function(video) {
-      videos.splice(videos.indexOf(video), 1);
+    remove: function(mediaId) {
+      media.splice(media.indexOf(mediaId), 1);
     },
-    get: function(videoId) {
-      for (var i = 0; i < videos.length; i++) {
-        if (videos[i].id === parseInt(videoId)) {
-          return videos[i];
+    get: function(mediaId) {
+      for (var i = 0; i < media.length; i++) {
+        if (media[i].id === parseInt(mediaId)) {
+          return media[i];
         }
       }
       return null;
     },
-    add: function(video) {
-      videos.push(video);
-    }
-  }
-})
-
-/**
- * A simple example service that returns some data.
- */
-.factory('Photos', function() {
-  // Might use a resource here that returns a JSON array
-
-  // Some fake testing data
-  var photos = [];
-
-
-  return {
-    all: function() {
-      return photos;
-    },
-    get: function(photoId) {
-      // Simple index lookup
-      return photos[photoId];
-    },
-    push: function(photo){
-      photos.push(photo);
-      return photos;
+    add: function(inMedia){
+      media.push(inMedia);
+      return media;
     }
   }
 });

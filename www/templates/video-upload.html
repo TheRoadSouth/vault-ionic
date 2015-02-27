@@ -1,10 +1,15 @@
 <ion-view view-title="Add Video">
   <ion-content padding="true">
-        <button class="button button-block button-primary button-vault" ng-click="uploadVideo()">
-          Record
-        </button>
+        <div class="list card">    
+            <div class="item item-image">
+                <video controls src="{{path}}" class="image" height=200></video>
+            </div>
+        </div>
 
-        <div class="list" ng-controller="VideoUploadCtrl">
+        <form class="" ng-controller="VideoUploadCtrl" name="tagPhoto">
+            <a class="button button-clear" ng-click="uploadVideo()">
+              <i class="icon ion-android-camera"></i> Retake Video
+            </a>
             <label id="title" class="item item-input item-floating-label">
                 <span class="input-label">Video Title</span>
                 <input type="text" placeholder="Video Title" ng-model="videoTitle">
@@ -13,9 +18,9 @@
                 <span class="input-label">Description</span>
                 <input type="text" placeholder="Description" ng-model="videoDescription">
             </label>
-            <button class="button button-positive" ng-click="saveVideo()">
+            <button class="button button-positive button-block" ng-click="saveVideo()">
                 Save
             </button>
-        </div>
+        </form>
   </ion-content>
 </ion-view>

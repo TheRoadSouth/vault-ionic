@@ -1,16 +1,15 @@
 angular.module('vault.controllers', [])
 
-.controller('MainCtrl', ['$state', '$scope', 'Videos', function($state, $scope, Videos) {
+.controller('MainCtrl', ['$state', '$scope', 'Media', function($state, $scope, Media) {
   // console.log('MainCtrl!!!');
 }])
 
-.controller('DashCtrl', function($scope, Photos, Videos) {
+.controller('DashCtrl', function($scope, Media) {
   // console.log('Photos: '+ Photos.all()+ ', Videos: '+ Videos);
-  $scope.photoList = Photos.all();
-  $scope.videoList = Videos.all();
+  $scope.mediaList = Media.all();
 })
 
-.controller('VideoUploadCtrl', function($scope, $cordovaCapture, Videos, $ionicTabsDelegate) {
+.controller('VideoUploadCtrl', function($scope, $cordovaCapture, Media, $ionicTabsDelegate) {
   // console.log("loading VideoUploadCtrl...");
 
   $scope.uploadVideo = function() {
@@ -31,18 +30,25 @@ angular.module('vault.controllers', [])
 
     $scope.saveVideo = function() {
       console.log('saveVideo()...');
-      Videos.add({
-        id: Videos.all().length,
+
+      var date = new Date();
+
+      Media.add({
+        id: Media.all().length,
         thumbnail: null,
         uri: $scope.path,
         title: $scope.videoTitle,
-        description: $scope.videoDescription
+        description: $scope.videoDescription,
+        date: date,
+        datePretty: date.toLocaleTimeString(),
+        mediaType: "movie"
       });
+      console.log(Media.all());
 
-      var videos = Videos.all();
-      videos.forEach(function(video) {
-        console.log('video.uri: ', video.uri);
-      });
+      // var videos = Media.all();
+      // videos.forEach(function(video) {
+      //   console.log('video.uri: ', video.uri);
+      // });
       // select display view
       $ionicTabsDelegate.select(0);
     };
@@ -58,28 +64,32 @@ angular.module('vault.controllers', [])
 })
 
 
-.controller('PhotoUploadCtrl', function($scope, $cordovaCamera, Photos, $ionicTabsDelegate) {
+.controller('PhotoUploadCtrl', function($scope, $cordovaCamera, Media, $ionicTabsDelegate) {
   // console.log("loading PhotoUploadCtrl...");
 
   document.addEventListener("deviceready", function() {
     $scope.savePhoto = function(){
         // console.log("savePhoto, photoDate:" + $scope.photoDate);
-        Photos.push({
-            id: Photos.all().length,
-            uri: $scope.imagePath,
+
+        var date = new Date();
+
+        Media.add({
+            id: Media.all().length,
+            thumbnail: null,
+            uri: $scope.path,
             title: $scope.photoTitle,
             description: $scope.photoDescription,
-            date: $scope.photoDate,
-            datePretty: $scope.datePretty
+            date: date,
+            datePretty: date.toLocaleTimeString(),
+            mediaType: "picture"
          });
 
         // select display view
         $ionicTabsDelegate.select(0);
     };
+
     $scope.takePhoto = function() {
       // console.log("loading takePhoto...");
-      
-
       var options = {
         destinationType: Camera.DestinationType.FILE_URI,
         sourceType: Camera.PictureSourceType.CAMERA,
@@ -90,10 +100,8 @@ angular.module('vault.controllers', [])
       };
 
       $cordovaCamera.getPicture(options).then(function(imageData) {
-        $scope.imagePath = imageData;
-        var date = new Date();
-        $scope.photoDate = date;
-        $scope.datePretty = date.toLocaleTimeString();
+      $scope.path = imageData;
+        
 
       }, function(err) {
         console.log("something went wrong with the camera!" + err);
