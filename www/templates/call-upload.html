@@ -1,0 +1,32 @@
+<ion-view view-title="Add Call">
+
+  <ion-content padding="true">
+    <h2>{{photomessage}}</h2>
+    
+    <div class="list card">    
+        <div class="item item-image">
+            <img src="{{path}}" class="image">
+        </div>
+    </div>
+
+    <form class="" ng-controller="CallUploadCtrl" name="tagPhoto">
+        <a class="button button-clear" ng-click="takePhoto()">
+          <i class="icon ion-android-camera"></i> Retake Photo
+        </a>
+    
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Photo Title</span>
+            <input id="itemTitle" type="text" placeholder="Photo Title" ng-model="photoTitle">
+        </label>
+
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Description</span>
+            <input id="itemDescription" type="text" placeholder="Description" ng-model="photoDescription">
+        </label>
+
+        <button class="button button-positive button-block" ng-click="savePhoto()">
+            Save
+        </button>
+    </form>
+  </ion-content>
+</ion-view>

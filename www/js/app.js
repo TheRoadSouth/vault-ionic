@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('vault', ['ionic', 'ngCordova', 'vault.controllers', 'vault.services'])
+angular.module('vault', ['ionic', 'ngCordova', 'vault.controllers', 'vault.services', 'ngResource'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -65,6 +65,15 @@ angular.module('vault', ['ionic', 'ngCordova', 'vault.controllers', 'vault.servi
         'video-upload': {
           templateUrl: 'templates/video-upload.html',
           controller: 'VideoUploadCtrl'
+        }
+      }
+    })
+    .state('tab.callupload', {
+      url: '/callupload',
+      views: {
+        'call-upload': {
+          templateUrl: 'templates/call-upload.html',
+          controller: 'CallUploadCtrl'
         }
       }
     })
