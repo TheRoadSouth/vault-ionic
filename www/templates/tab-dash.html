@@ -7,7 +7,7 @@
 
 
 
-    <div class="cd-timeline-block" ng-repeat="obj in mediaList | orderBy:'date':photoOrderReverse">
+    <div class="cd-timeline-block" ng-repeat="obj in mediaList | orderBy:'date':photoOrderReverse track by $index">
     
 
       <div ng-if="obj.mediaType == 'picture'" class="">

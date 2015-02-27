@@ -9,11 +9,36 @@ angular.module('vault.services', [])
   // Some fake testing data
   var media = [];
 
+  var fn = {};
+  fn.loadSaved = function(){
+    if(localStorage.hasOwnProperty("mediaList")){
+      media = JSON.parse(localStorage.mediaList);
+      console.log("loading saved:");
+      console.log(media);
+      return media;
+    }
+    return media;
+  }
+  fn.saveLocal = function(){
+    localStorage['mediaList'] = JSON.stringify(media);
+  }
+  fn.add = function(inMedia){
+    media.push(inMedia);
+    fn.saveLocal();
+    return media;
+  }
+  fn.all = function() {
+    if(media.length < 1){
+      return fn.loadSaved();
+    }
+    return media;
+  }
 
   return {
-    all: function() {
-      return media;
-    },
+    loadSaved: fn.loadSaved,
+    saveLocal: fn.saveLocal,
+    add: fn.add,
+    all: fn.all,
     remove: function(mediaId) {
       media.splice(media.indexOf(mediaId), 1);
     },
@@ -24,10 +49,7 @@ angular.module('vault.services', [])
         }
       }
       return null;
-    },
-    add: function(inMedia){
-      media.push(inMedia);
-      return media;
     }
+    
   }
 });

@@ -6,15 +6,34 @@ angular.module('vault.controllers', [])
 
 .controller('DashCtrl', function($scope, Media) {
   // console.log('Photos: '+ Photos.all()+ ', Videos: '+ Videos);
+
   $scope.mediaList = Media.all();
+
 })
 
 .controller('VideoUploadCtrl', function($scope, $cordovaCapture, Media, $ionicTabsDelegate) {
   // console.log("loading VideoUploadCtrl...");
+  $scope.saveVideo = function() {
+    console.log('saveVideo()...');
+    console.log($scope);
+    var date = new Date();
 
-  $scope.uploadVideo = function() {
+    Media.add({
+      id: Media.all().length,
+      thumbnail: null,
+      uri: $scope.path,
+      title: $scope.videoTitle,
+      description: $scope.videoDescription,
+      date: date,
+      datePretty: date.toLocaleTimeString(),
+      mediaType: "movie"
+    });
+    console.log(Media.all());
+
+    $ionicTabsDelegate.select(0);
+  };
+  $scope.takeVideo = function() {
     // console.log("uploading video...");
-
     var options = {
       limit: 1,
       duration: 15
@@ -28,31 +47,6 @@ angular.module('vault.controllers', [])
       }
     };
 
-    $scope.saveVideo = function() {
-      console.log('saveVideo()...');
-
-      var date = new Date();
-
-      Media.add({
-        id: Media.all().length,
-        thumbnail: null,
-        uri: $scope.path,
-        title: $scope.videoTitle,
-        description: $scope.videoDescription,
-        date: date,
-        datePretty: date.toLocaleTimeString(),
-        mediaType: "movie"
-      });
-      console.log(Media.all());
-
-      // var videos = Media.all();
-      // videos.forEach(function(video) {
-      //   console.log('video.uri: ', video.uri);
-      // });
-      // select display view
-      $ionicTabsDelegate.select(0);
-    };
-
     $cordovaCapture.captureVideo(options).then(function(videoData) {
       // console.log("Successfully captured video ----> Firing callback!");
       captureSuccess(videoData);
@@ -60,7 +54,8 @@ angular.module('vault.controllers', [])
       console.log("Error capturing video");
     });
 
-  }
+  };
+
 })
 
 
